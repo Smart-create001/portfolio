@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#040404">
+    <meta name="color-scheme" content="dark">
     <meta
         name="description"
         content="Robot and AI portfolio collection by Warayut Keawpaisarn in a cinematic editorial presentation."
@@ -21,7 +23,10 @@
     <header class="collection-nav-shell" id="header">
         <div class="collection-nav">
             <a href="index.html" class="collection-brand">WARAYUT</a>
-            <nav class="collection-links">
+            <button class="nav-toggle" type="button" id="collectionNavToggle" aria-expanded="false" aria-controls="collectionLinks" aria-label="Toggle navigation">
+                <i class="uil uil-bars"></i>
+            </button>
+            <nav class="collection-links" id="collectionLinks">
                 <a href="#hero">hero</a>
                 <a href="#synopsis">synopsis</a>
                 <a href="#features">features</a>
@@ -34,7 +39,7 @@
     <main>
         <section class="collection-hero cinematic-hero" id="hero">
             <div class="hero-image-layer">
-                <img src="assets/images/cover.png" alt="Robot and AI collection visual">
+                <img fetchpriority="high" decoding="async" src="assets/images/cover.png" alt="Robot and AI collection visual">
             </div>
             <div class="hero-layer-overlay"></div>
 
@@ -78,7 +83,7 @@
             <div class="scene-side scene-side-left"></div>
             <div class="scene-main reveal">
                 <div class="scene-main-image">
-                    <img src="assets/images/robot-ai-projects.png" alt="Technical feature scene">
+                    <img loading="lazy" decoding="async" src="assets/images/robot-ai-projects.png" alt="Technical feature scene">
                     <span class="scene-play"><i class="uil uil-play"></i></span>
                 </div>
                 <div class="scene-caption">
